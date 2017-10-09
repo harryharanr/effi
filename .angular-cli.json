@@ -1,0 +1,90 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "oss-code"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "./assets/css/bootstrap.min.css",
+        "./assets/icon/themify-icons/themify-icons.css",
+        "./assets/icon/icofont/css/icofont.css",
+        "./assets/pages/flag-icon/flag-icon.min.css",
+        "./assets/pages/menu-search/css/component.css",
+        "./assets/css/style.css",
+        "./assets/css/linearicons.css",
+        "./assets/css/simple-line-icons.css",
+        "./assets/css/ionicons.css",
+        "./assets/css/jquery.mCustomScrollbar.css"
+      ],
+      "scripts": [
+        "./assets/js/jquery.min.js",
+        "./assets/js/jquery-ui.min.js",
+        "./assets/js/popper.min.js",
+        "./assets/js/bootstrap.min.js",
+        "./assets/js/jquery.slimscroll.js",
+        "./assets/js/modernizr.js",
+        "./assets/js/css-scrollbars.js",
+        "./assets/js/classie.js",
+        "./assets/pages/accordion/accordion.js",
+        "./assets/js/animation.js",
+        "./assets/js/i18next.min.js",
+        "./assets/js/i18nextXHRBackend.min.js",
+        "./assets/js/i18nextBrowserLanguageDetector.min.js",
+        "./assets/js/jquery-i18next.min.js",
+        "./assets/js/script.js",
+        "./assets/js/pcoded.min.js",
+        "./assets/js/demo-12.js",
+        "./assets/js/jquery.mCustomScrollbar.concat.min.js",
+        "./assets/js/jquery.mousewheel.min.js"
+        
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}
