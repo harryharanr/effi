@@ -50,7 +50,6 @@
         "./assets/js/demo-12.js",
         "./assets/js/jquery.mCustomScrollbar.concat.min.js",
         "./assets/js/jquery.mousewheel.min.js"
-        
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
